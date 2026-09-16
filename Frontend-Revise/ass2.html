@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institute Website</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #123c69;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #1d70a2;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+        }
+
+        .about,
+        .contact {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .about h2,
+        .departments h2,
+        .contact h2 {
+            color: #123c69;
+            margin-bottom: 15px;
+        }
+
+        .department-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .department {
+            background-color: white;
+            width: calc(50% - 10px);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .department h3 {
+            color: #1d70a2;
+            margin-bottom: 10px;
+        }
+
+        .department p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #123c69;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        margin-top: 30px;}
+        @media (max-width: 600px) {
+            .department {
+                width: 100%;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Rajkiya Engineering College</h1>
+        <p>Institute of Engineering and Technology</p>
+    </header>
+    <nav> <a href="#home">Home</a> <a href="#departments">Departments</a> <a href="#contact">Contact</a> </nav>
+    <div class="container">
+        <section class="about" id="home">
+            <h2>About Our Institute</h2>
+            <p> Rajkiya Engineering College is a premier technical institute providing quality education in engineering
+                and technology. The institute focuses on academic excellence, innovation and overall development of
+                students. </p>
+        </section>
+        <section class="departments" id="departments">
+            <h2>Our Departments</h2>
+            <div class="department-container">
+                <div class="department">
+                    <h3>Computer Science and Engineering</h3>
+                    <p> The CSE department provides education in programming, data structures, databases, artificial
+                        intelligence and web development. </p>
+                </div>
+                <div class="department">
+                    <h3>Electronics Engineering</h3>
+                    <p> The Electronics Engineering department focuses on electronics, communication systems,
+                        microprocessors and digital electronics. </p>
+                </div>
+                <div class="department">
+                    <h3>Mechanical Engineering</h3>
+                    <p> The Mechanical Engineering department deals with manufacturing, machines, thermodynamics and
+                        mechanical design. </p>
+                </div>
+                <div class="department">
+                    <h3>Civil Engineering</h3>
+                    <p> The Civil Engineering department provides knowledge of construction, structural engineering,
+                        surveying and transportation engineering. </p>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <p><b>Address:</b> Rajkiya Engineering College, Sonbhadra, Uttar Pradesh</p>
+            <p><b>Email:</b> info@recsonbhadra.ac.in</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2026 Rajkiya Engineering College. All Rights Reserved.</p>
+    </footer>

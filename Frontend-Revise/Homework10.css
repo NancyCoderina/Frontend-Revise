@@ -1,0 +1,10 @@
+img{
+    width:300px;
+    background: lightyellow;
+    border-radius: 12px;
+    border: 2px solid #333;
+    padding:20px;
+    margin: 30px auto;
+    box-sizing: border-box;
+    
+}
